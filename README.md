@@ -8,7 +8,6 @@ escalabilidade, boa flexibilidade, arquitetura e baixo custo, torna-se uma ótim
 programação.
 
 ## Imprimir Saída Terminal 
---------------------------------
 NODE = Enter / Para entrar no ambiente Node e executar o JavaScript
 
 console.log(" Meu primeiro programa")
