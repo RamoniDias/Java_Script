@@ -30,16 +30,29 @@ const listaDeDestinos = new Array(
 //Exibir lista
 console.log(listaDeDestinos, "\n");
 
-//Laço quando eu sei qtos tem na Lista, usa-se While.
+/* //Laço quando eu sei qtos tem na Lista, usa-se While.
 while(contador < 3){
     //console.log(listaDeDestinos[contador],"\n")
     if(listaDeDestinos[contador] == destino){
         console.log("Destino Existente.\n");
+        //break;
         
     }else{
         console.log("Destino NÃO Existe.");
     }
 
     contador += 1;
+} */
 
+
+for (let contador = 0; contador < 3; contador++) {
+    
+
+    if (listaDeDestinos[contador] == destino) {
+      console.log("Destino Existente.\n");
+      //break;
+    } else {
+      console.log("Destino NÃO Existe.");
+    }
+    
 }
