@@ -1,14 +1,8 @@
-class Cliente{
-    nome;
-    cpf;
-}
 
-class ContaCorrente{
-    agencia;
-    saldo;
-}
+import {Cliente} from "./Cliente.js";//Importando esta Classe deste arquivo
+import { ContaCorrente } from "./ContaCorrente.js";
 
-const cliente1 = new Cliente();
+const cliente1 = new Cliente(); 
 cliente1.nome    =   "Ricardo";
 cliente1.cpf     = 11111111100;
 
@@ -16,15 +10,20 @@ const cliente2 = new Cliente();
 cliente2.nome    = "Alice";
 cliente2.cpf     = 22222222200;
 
-const contaCorrenteRicardo1 = new ContaCorrente();
-cliente1.agencia = "1001";
-cliente1.saldo   =      0;
+const contaCorrenteRicardo = new ContaCorrente();
+contaCorrenteRicardo.agencia = "1001"; //implementar valor errado
+contaCorrenteRicardo.saldo   =      0;
+contaCorrenteRicardo.cliente = cliente1; //Pegando os atributos de outra Classe
 
-const contaCorrenteRicardo2 = new ContaCorrente();
-cliente2.agencia = "1002";
-cliente2.saldo   =      0;
+//contaCorrenteRicardo.depositar(100);   // Depósito Positivo
+//contaCorrenteRicardo.depositar(100);   // implementar valor CERTO
+//contaCorrenteRicardo.depositar(100); 
+//console.log("\n","Saldo:",contaCorrenteRicardo.saldo)
 
-console.log("\n",cliente1,"\n");   
-console.log("\n",cliente2, "\n"); 
+//const valorSacado = contaCorrenteRicardo.sacar(50); //Para mostrar valor do saque, se criou uma variavel para mostrar
+//console.log("\n","Valor Sacado:",valorSacado);
+
+
+console.log("\n",contaCorrenteRicardo, "\n");   
 
 
