@@ -1,0 +1,20 @@
+{
+  "name": "santander",
+  "version": "1.0.0",
+  "description": "Projeto do santander para seus clientes/criar modulo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamoniDias/Java_Script.git"
+  },
+  "author": "Ramoni Dias",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/RamoniDias/Java_Script/issues"
+  },
+  "homepage": "https://github.com/RamoniDias/Java_Script#readme"
+}
